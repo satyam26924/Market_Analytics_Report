@@ -1,7 +1,9 @@
 📊 Market Analytics Dashboard
+
 This project is a data-driven market analytics dashboard that provides insights into customer behavior, product performance, and review sentiment. It combines SQL for data extraction, Python for data enrichment, and Power BI for visual storytelling.
 
 🚀 Project Overview
+
 Objective:
 To create an end-to-end analytics solution that helps marketing teams identify product trends, customer satisfaction levels, and sales insights using advanced sentiment analysis and business KPIs.
 
@@ -12,11 +14,13 @@ Visual performance metrics for products, customers, and regions
 Power BI dashboard with interactive visualizations
 
 🧰 Tech Stack
+
 Python: Data cleaning, sentiment analysis with NLTK
 SQL Server: Backend database with structured marketing data
 Power BI: Dashboard creation and KPI visualization
 
 🗃️ Dataset
+
 Database: PortfolioProject_MarketingAnalytics
 
 Main Table: fact_customer_reviews
@@ -26,6 +30,7 @@ ReviewID, CustomerID, ProductID
 ReviewDate, Rating, ReviewText
 
 🧠 Sentiment Analysis
+
 Python Script: customer_reviews_enrich.py
 Used VADER SentimentIntensityAnalyzer (from NLTK)
 Calculated sentiment scores for each review
@@ -39,9 +44,11 @@ Bucketed scores for visualization:
 Output saved as: customer_reviews_enrich.csv
 
 📈 Power BI Dashboard
+
 File: Dashboard.pbix
 
 Pages & Visuals:
+
 Overview: KPIs for Total Sales, Total Reviews, and Average Ratings
 Sentiment Analysis: Bar charts by sentiment category & bucket
 Customer Insights: Region-wise and product-wise customer engagement
@@ -49,6 +56,7 @@ Review Trends: Monthly review trends and sentiment changes
 Data Source: Connected to enriched data via SQL Server and CSV output.
 
 ⚙️ Setup Instructions
+
 Install dependencies:
 
 pip install pandas nltk pyodbc sqlalchemy
